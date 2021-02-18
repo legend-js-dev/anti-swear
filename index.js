@@ -64,7 +64,7 @@ client.on("message", async (message) => {
   let pog = yus.split("{user-mention}").join("<@"+message.author.id+">").split("{server-name}").join(message.guild.name).split("{user-tag}").join(message.author.tag).split("{user-username}").join(message.author.username)
   if (words === null) return;
   function check(msg) { //is supposed to check if message includes da swear word
-    return words.some(word => message.content.toLowerCase().includes(word.word.toLowerCase()))
+    return words.some(word => message.content.toLowerCase().split(" ").join("").includes(word.word.toLowerCase()))
   }
   if (check(message.content) === true) {
     message.delete()
