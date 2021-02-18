@@ -1,2 +1,7 @@
 # anti-swear
-an anti swear bot for discord do NOT remove credits
+## things not to do:
+- dont remove credits.
+- dont copy paste or youll never learn.
+## things you should do
+- star this repo
+- dont be dumb
