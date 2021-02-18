@@ -2,6 +2,7 @@ const Discord = require("discord.js")
 module.exports = {
   name: "delword",
   run: async (client, message, args, db) => {
+    if (!message.channel.permissionsFor(message.author).has("MANAGE_GUILD")) return message.channel.send(":x: | **You dont have permissions to use this Command!**"));
     let pog = db.get(`words_${message.guild.id}`)
     let word = args[0]
     if (!word) {
