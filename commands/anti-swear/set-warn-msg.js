@@ -10,7 +10,7 @@ module.exports = {
     db.set(`message_${message.guild.id}`, msg)
     let embed = new Discord.MessageEmbed()
     embed.setTitle("Message Set!")
-    embed.setFooter(message.author.tag + " | made by LΣGΣПD#0001", message.author.displayAvatarURL({ dynamic: true }))
+    embed.setFooter(message.author.tag + " | made by legendjs#0001", message.author.displayAvatarURL({ dynamic: true }))
     embed.setTimestamp()
     embed.setAuthor(message.guild.name, message.guild.iconURL())
     embed.addField("message", msg)
