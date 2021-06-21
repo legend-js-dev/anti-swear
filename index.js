@@ -1,7 +1,7 @@
 console.log("[INFO]: Loading...")
 //anti Swear bot coded by legend :D
 const { Client, Collection } = require("discord.js");
-const {prefix, token } = require("./config.json")
+const { prefix, token } = require("./config.json")
 //dont touch the credits or i will find you and u will have to commit die >:)
 const client = new Client({
     disableMentions: "everyone"
@@ -28,7 +28,7 @@ console.log("-------------------------------------")
 //this took me a long time so dont you dare remove credits, if u do remove credits then you will have copy right issues.
 client.on("ready", () => {
     console.log(`[INFO]: Ready on client (${client.user.tag})`)
-    client.user.setActivity("anti-swear bot by legend :D", { type: "WATCHING" })
+    client.user.setActivity("anti-swear bot by legendjs :D", { type: "WATCHING" })
 })
 
 client.on("message", async message => {
