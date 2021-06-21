@@ -9,7 +9,7 @@ module.exports = {
       let embed = new Discord.MessageEmbed()
       .setTitle("Error")
       .setDescription(`:x: | **No word provided**\nFormat: \`+delword fk\``)
-      .setFooter(message.author.tag + " | made by LΣGΣПD#0001", message.author.displayAvatarURL())
+      .setFooter(message.author.tag + " | made by legendjs#0001", message.author.displayAvatarURL())
       .setThumbnail(message.guild.iconURL())
       .setColor("#FF0000")
       return message.channel.send({
@@ -22,7 +22,7 @@ module.exports = {
                 No.setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
                 No.setDescription(`:x: | **Word Not Found**`)
                 No.setColor("#FF0000")
-                No.setFooter(message.guild.name + " | made by LΣGΣПD#0001", message.guild.iconURL());
+                No.setFooter(message.guild.name + " | made by legendjs#0001", message.guild.iconURL());
                 No.setThumbnail(message.guild.iconURL())
 
             if (!data) return message.channel.send({ embed: No });
@@ -37,7 +37,7 @@ module.exports = {
             let embed = new Discord.MessageEmbed()
                 embed.setAuthor(message.author.tag, message.author.displayAvatarURL())
                 embed.setDescription(`**The word has been deleted!** `)
-                embed.setFooter(message.guild.name + " | made by LΣGΣПD#0001", message.guild.iconURL());
+                embed.setFooter(message.guild.name + " | made by legendjs#0001", message.guild.iconURL());
 embed.setColor("GREEN")
 embed.setTimestamp()
             return message.channel.send({ embed: embed });
@@ -45,7 +45,7 @@ embed.setTimestamp()
             let embed = new Discord.MessageEmbed()
                 embed.setAuthor(message.author.tag, message.author.displayAvatarURL())
                 embed.setDescription(`:x: | **The word was not found!**`)
-                embed.setFooter(message.guild.name + " | made by LΣGΣПD#0001", message.guild.iconURL());
+                embed.setFooter(message.guild.name + " | made by legendjs#0001", message.guild.iconURL());
                 embed.setColor("#FF0000")
                 embed.setTimestamp()
 
