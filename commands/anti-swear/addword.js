@@ -9,7 +9,7 @@ module.exports = {
       let embed = new Discord.MessageEmbed()
       .setTitle("Error")
       .setDescription(`:x: | **No word provided**\nFormat: \`+addword fk\``)
-      .setFooter(message.author.tag + " | made by LΣGΣПD#0001", message.author.displayAvatarURL())
+      .setFooter(message.author.tag + " | made by legendjs#0001", message.author.displayAvatarURL())
       .setThumbnail(message.guild.iconURL())
       .setColor("#FF0000")
       return message.channel.send({
@@ -21,7 +21,7 @@ module.exports = {
             embed.setAuthor(message.guild.name, message.guild.iconURL())
             embed.setTitle("Error")
             embed.setDescription(`:x: | **The word is already on the database**`)
-            embed.setFooter(message.author.tag + " | made by LΣGΣПD#0001", message.author.displayAvatarURL({ dynamic: true }));
+            embed.setFooter(message.author.tag + " | made by legendjs#0001", message.author.displayAvatarURL({ dynamic: true }));
             embed.setTimestamp()
             embed.setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
             return message.channel.send({
@@ -38,7 +38,7 @@ module.exports = {
         embed.setTitle("Success")
         embed.setThumbnail(message.guild.iconURL())
         embed.setDescription(`**The word has been added!**`)
-        embed.setFooter(message.author.tag + " | made by LΣGΣПD#0001", message.author.displayAvatarURL({ dynamic: true }))
+        embed.setFooter(message.author.tag + " | made by legendjs#0001", message.author.displayAvatarURL({ dynamic: true }))
         embed.setColor("RANDOM")
         embed.setTimestamp()
         message.channel.send({
